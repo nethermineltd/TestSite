@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Themed Fancy Website</title>
+    <style>
+        :root {
+            --main-red: #e63946;
+            --dark-red: #b71c1c;
+            --light-red: #ffccd5;
+            --white: #ffffff;
+            --black: #000000;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: var(--white);
+            background-color: var(--dark-red);
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--dark-red), var(--main-red));
+            padding: 1rem 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--light-red);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: url('https://via.placeholder.com/1920x800?text=Red+Theme') no-repeat center center/cover;
+            color: var(--white);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--main-red);
+            color: var(--white);
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: var(--light-red);
+            color: var(--black);
+        }
+
+        .content {
+            padding: 3rem 2rem;
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .content h3 {
+            text-align: center;
+            color: var(--main-red);
+        }
+
+        footer {
+            background: var(--dark-red);
+            text-align: center;
+            padding: 1rem;
+            color: var(--white);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Red Vibes</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Red Vibes</h2>
+        <p>Bringing elegance and style to the web.</p>
+        <a href="#" class="button">Get Started</a>
+    </section>
+
+    <section class="content">
+        <h3>About Us</h3>
+        <p>We specialize in creating stunning websites that captivate and inspire. Our red-themed designs evoke passion, energy, and creativity, ensuring your site leaves a lasting impression.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Red Vibes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
